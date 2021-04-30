@@ -1,0 +1,28 @@
+/* ---------------------------------------HEADER--------------------------------------------------------- */
+
+.banner{
+    background-image:url(../img/lemon-pie.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    height: 343px;
+  
+}
+
+/* -------------------------------------BODY--------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@font-face { 
+    font-family: "Playfair Display";
+    src: local("PlayfairDisplay-BoldItalic"),
+    url(../fonts/PlayfairDisplay-BoldItalic);
+}
+
+body{
+    font-family:'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+h2{
+font-family:"Playfair Display", serif;
+}
