@@ -1,0 +1,175 @@
+/* ----------------------------------ASIDE----------------------------------------------- */
+
+aside{
+    background-color:#1CD1B0;
+    font-size: 24px; 
+    padding: 3px 23px;
+}
+
+/* ------------------------------------BODY---------------------------------------------- */
+
+body{
+    margin:0px;
+}
+/* ------------------------------------HEADER--------------------------------------------- */
+
+header{
+    background-color: #00669F;
+    padding: 19px;
+   /* position: sticky; */
+   top: 0px;
+   margin:0px;
+}
+
+h1{
+    color:white;
+    margin: 0px;
+    padding:5px;
+    font-size:30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+/* -----------------------------------MAIN------------------------------------------------- */
+
+main{
+    padding-top: 0px;
+    padding-bottom: 90px;
+}
+
+.cards-SuperHeroes{
+background-color:#F3F3F3;
+margin: auto;
+margin-top: 70px;
+width:402px;
+text-align: left;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px 30px 0px 0px;
+}
+
+.card-image{
+width:402px;
+height: 200px;
+background-size:cover;
+position: relative;
+border-radius: 30px 30px 0px 0px;
+}
+
+.background1 {
+   background-image: url("../img/bg-batman.jpg");
+}
+
+.fa-heart{
+    color:red;
+    font-size: 33px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.img-batman{
+    background-image: url("../img/batman.jpg");
+    width: 128px;
+    height: 128px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 130px;
+    top: 130px;
+}
+
+.superheroe-detalle{
+    margin-top: 83px;
+    padding-bottom: 40px;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+.parrafo{
+    padding-left:30px;
+    padding-right:30px;
+    text-align:left;
+    font-size: 20px;
+}
+
+.boton-ver-mas{
+    background-color: #00669F;
+    text-align: center;
+    width: 115px;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+/* ------------------------------------CARD2--------------------------------------------- */
+.card-image2{
+    width:402px;
+    height: 228px;
+    background-size:cover;
+    position: relative;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.background2{
+    background-image: url(../img/bg-wonderw.jpg);
+}
+
+.img-mujerMaravilla{
+    background-image: url(../img/wonderw.jpg);
+    width: 128px;
+    height: 128px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 130px;
+    top: 153px;
+}
+
+/* ----------------------------------CARD3------------------------------------------------ */
+.card-image3{
+    width:402px;
+    height: 228px;
+    background-size:cover;
+    position: relative;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.background3{
+    background-image: url(../img/bg-superman.jpg);
+}
+
+.img-superman{
+    background-image: url(../img/superman.jpg);
+    width: 128px;
+    height: 128px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 130px;
+    top: 153px;
+}
+/* ----------------------------------BOTON-MAS-------------------------------------------- */
+
+.fa-plus-circle{
+    color: #00669F;
+    font-size: 60px;
+    right: 100px;
+    bottom: -196px;
+    position: absolute;
+}
+
+/* -----------------------------------FOOTER---------------------------------------------- */
+
+footer{
+    background-color:#00669F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
