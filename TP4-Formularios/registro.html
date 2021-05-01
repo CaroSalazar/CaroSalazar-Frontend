@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../TP4-Formularios/css/style.css">
+    <title>Ecommerce</title>
+</head>
+
+<body>
+    <aside class="descuento">20% de descuento en todos los productos</aside>
+    <header>
+        <h1>
+            <img src="../TP4-Formularios/img/tienda.png" alt="img-tienda">
+            <span class="nombre-tienda">Nombre tienda</span>
+        </h1>
+    </header>
+    <nav class="navegacion">
+        <a href="./contacto.html" target="_blank" class="contacto">Contacto</a>
+        <a href="./registro.html" target="_blank" class="registro">Registrarme</a>
+        <a href="./login.html" target="_blank" class="ingreso">Ingresar</a>
+    </nav>
+    <div class="registrobox">
+        <h2 class="Registro">Registro</h2>
+        <form action="" method="GET">
+            <input type="text" id="NombreYApellido" name="NombreYApellido" placeholder="Nombre y Apellido"
+                required></input>
+            <input type="email" id="CorreoElectronico" name="CorreoElectronico" placeholder="Correo electronico"
+                required></input>
+            <input type="password" id="Contraseña" name="Contraseña" placeholder="Contraseña" required></input>
+            <select placeholder="Pais" id="pais" required>
+                <option value="" selected disabled>Pais</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Brasil">Brasil</option>
+            </select>
+            <div>
+                <button type="reset" class="resetear">Resetear</button>
+                <button type="submit" class="enviar">Enviar</button>
+            </div>
+        </form>
+        <p class="cuentaexistente">¿Ya tenés una cuenta? <a href='../TP4-Formularios/login.html'>Ingresá</a></p>
+    </div>
+    <footer>
+        <p class="pie">Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+
+</html>
