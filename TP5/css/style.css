@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Karla:wght@400;700&family=Roboto&display=swap');
+
+/* -----------------------------------BODY---------------------------------------------- */
+
+body {
+    margin: 0px;
+}
+
+/* ------------------------------------ASIDE--------------------------------------------- */
+
+.descuento {
+    background-color: #1cd1b0;
+    font-family: 'Roboto', sans-serif;
+    width: cover;
+    padding-left: 20px;
+    font-size: 15px;
+    padding-top: 5px;
+    font-weight: 400;
+}
+
+/* ------------------------------------HEADER---------------------------------------------- */
+
+header {
+    position: relative;
+    top: 0px;
+    z-index: 100;
+}
+
+.nombre-tienda {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin: 0px;
+    padding-left: 20px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: absolute;
+    padding-top: 27px;
+}
+
+h1 {
+    background-color: #00669f;
+    top: 0px;
+    margin: 0px;
+    padding-left: 10px;
+    width: cover;
+    position: relative;
+}
+
+.navegacion {
+    text-align: right;
+    background: #001d2d;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 30px;
+  }
+
+.inicio,
+.registro,
+.ingreso,
+.contacto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0px 15px;
+}
+
+
+/* ------------------------------------------DIV----------------------------------------------------------------- */
+
+.box {
+    margin: 160px auto;
+    width: fit-content;
+}
+
+.login {
+    font-family: 'Inter', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 72px;
+    color: #333333;
+}
+
+/* -----------------------------------------------FORMULARIO-----------------------------------------------------*/
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+select {
+    display: block;
+    border: 1.55px solid #000000;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 620px;
+    height: 60px;
+    padding-left: 28px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    height: 54px;
+    border-radius: 23px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 44px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    background: #1cd1b0;
+    color: #000000;
+}
+
+.cuentanoexistente {
+    font-family: 'Karla', sans-serif;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* --------------------------------------------FOOTER---------------------------------------------------------- */
+
+footer {
+    height: 61px;
+    background: #00669f;
+}
+
+
+.pie {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    height: 19px;
+    left: 549.15px;
+    top: 1076px;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff9f9;
+    margin: auto;
+    padding-top: 21px;
+}
+
+/*----------------------------------------------REGISTRO----------------------------------------------------------- */
+
+.registrobox {
+    margin: 100px auto;
+    width: fit-content;
+}
+
+.Registro {
+    font-family: 'Inter', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 72px;
+    color: #333333;
+}
+
+.resetear,
+.enviar {
+    width: 300px;
+    height: 54px;
+    border-radius: 23px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 44px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.resetear {
+    background: #888888;
+    color: #ffffff;
+}
+
+.enviar {
+    background: #1cd1b0;
+    color: #000000;
+    margin-left: 16px;
+}
+
+.cuentaexistente {
+    font-family: 'Karla', sans-serif;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* -----------------------------------CONTACTO------------------------------------------------------------------ */
+
+.contactobox {
+    margin: 100px auto;
+    width: fit-content;
+  }
+  .Contacto {
+    font-family: 'Inter', sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #333333;
+  }
+
+  textarea {
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 220px;
+    border: 1.55px solid #000000;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 22px 28px;
+    margin-bottom: 40px;
+  }
