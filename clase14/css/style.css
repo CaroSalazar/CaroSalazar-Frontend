@@ -22,28 +22,28 @@ header {
   background: var(--gray);
   color: var(--white);
   padding: 0.5rem 1.25rem;
-  display: flex; 
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-}
-header nav{
+  /*Sacamos flex*/
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
   align-items: center;
-  
+
+  /*Sacamos flex*/
 }
+
 header nav ul {
+  /*Sacamos flex*/
   display: flex;
-  flex-direction: row;
   gap: 13px;
-  align-items: center;
-  justify-content: center;
+  /*Sacamos flex*/
 }
 
 header .header__logo {
+  /*Sacamos flex*/
   display: flex;
   align-items: center;
-  gap:15px;
+  gap: 10px;
+  /*Sacamos flex*/
 }
 
 header .header__logo span,
@@ -62,7 +62,13 @@ main {
 }
 
 main .container {
-  /*Añadimos flex*/
+  /*Sacamos flex*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /*Sacamos flex*/
 }
 
 main section .card {
@@ -84,7 +90,11 @@ main section .delivery span {
 main section .podio {
   background: #fff;
   font-weight: bold;
-  /*Añadimos flex*/
+    /*Sacamos flex*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*Sacamos flex*/
 }
 main section .podio h3 {
   color: var(--red);
@@ -100,7 +110,11 @@ main section .podio h3 {
 }
 
 .top5 {
-  /*Añadimos flex*/
+  /*Sacamos flex*/
+  display: flex;
+  justify-content: center;
+  gap: 88px;
+  /*Sacamos flex*/
 }
 
 .top5 .podio__pizzas ol li {
@@ -109,27 +123,50 @@ main section .podio h3 {
 
 .top5 .podio__img {
   padding-bottom: 60px;
-  /*Añadimos flex*/
+    /*Sacamos flex*/
+    align-items: flex-end;
+    display: flex;
+    /*Sacamos flex*/
 }
 
 footer {
   background: #222;
   padding: 19px 20px;
-  /*Añadimos flex*/
+  /*Sacamos flex*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*Sacamos flex*/
 }
 
 footer .footer__logo {
   color: var(--lightWhite);
   font-size: 14px;
-  /*Añadimos flex*/
+    /*Sacamos flex*/
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /*Sacamos flex*/
 }
 
 footer ul {
   color: var(--lightWhite);
-  /*Añadimos flex*/
+  /*Sacamos flex*/
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  order: -1;
+  /*Sacamos flex*/
 }
-
 @media screen and (max-width:  768px) {
-   /* - Ocultar los botone de nav (del header)
-      - Añadir el ícono hamburguesa */
+    header nav ul{
+        display: none;
+        /* visibility: hidden; */
+    }
+    header nav::before{
+        content: '\f0c9';
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900;
+        font-size: 2rem;
+    }
 }
