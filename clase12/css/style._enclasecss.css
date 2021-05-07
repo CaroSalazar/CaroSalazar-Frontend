@@ -51,8 +51,15 @@ nav ul li a:before{
   content:'';
   background: var(--decoration-color);
   position:absolute;
-  bottom:-10px; 
- 
+  bottom:-10px;
+  width: 0px;
+  height: 5px;
+  transition: ease .8s;
+}
+
+nav ul li a:hover:before{
+    width: 100%;
+    transition: ease-in .3s;
 }
 
 /* Barra redes */
@@ -72,6 +79,7 @@ nav ul li a:before{
     background: var(--primary-color);
     padding: 10px 15px;
     text-decoration: none;
+    transition: all 450ms;
 }
 
 .social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
@@ -80,6 +88,10 @@ nav ul li a:before{
 .social ul li .icon-whatsapp {background: #25D366;}
 .social ul li .icon-mail {background: #666666;}
 
+.social ul li a:hover{
+    padding: 10px 30px;
+    background: var(--primary-color);
+}
 
   /* Contenido */
 .container{
@@ -98,6 +110,7 @@ nav ul li a:before{
     text-decoration: none;
     padding: 15px;
     margin-top: 15px;
+    transition: all 250ms;
 }
 .container a:hover{
     color:var(--decoration-color);
@@ -119,24 +132,13 @@ nav ul li a:before{
     border-right: 10px solid rgb(66,139,202);
     border-bottom: 10px solid rgb(202, 66, 129);
     border-left: 10px solid rgba(66,139,202,.2);
-
+    animation: ruedita 500ms infinite;
+    animation-timing-function: linear;
  }
-
  @keyframes ruedita{
     0%{
     }
-    25%{
-        transform: rotate(90deg);
-
-   }
-    50%{
-        transform: rotate(180deg);
-    }
-    75%{
-       transform: rotate(270deg);
-   }
    100%{
        transform: rotate(360deg);
    }
-
-    }
+}

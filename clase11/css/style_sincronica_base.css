@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+:root{
+ --primary-color:#C70039;
+ --secondary-color:grey;
+}
+body{
+  background:#222;
+  font-family: 'Roboto';
+  color:#f2f2f2;
+}
+
+/** LISTAS **/
+/** ====== **/
+/* Menú  */
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin-left: 10px;
+}
+nav ul li {
+    display: inline-block; 
+    margin-right: 30px;
+}
+
+nav ul li::before{
+content: "\2605";
+color: var(--primary-color);
+display: inline-block;
+padding-right: 5px;
+font-size: 30px;
+visibility: hidden;
+}
+
+nav ul li:hover::before{
+    visibility: visible;
+}
+
+a{
+    margin:10px;
+    cursor:pointer;
+    font-size:30px;  
+    text-decoration: none;
+}
+a:link{ /*no visitado por el usuario*/
+    color: var(--primary-color);
+}
+
+a:active{ /*se activa cuando el usuario pulsa el elemento */
+    background-color: var(--primary-color); 
+}
+
+a:hover{/*elemento apuntador pasa por encima */
+    text-decoration: underline;
+}
+
+a:visited{ /*exclusivo para enlaces */
+    color: var(--secondary-color) ;
+
+}
+/* Lista con viñeta centrada */
+.centrar-listas {
+	text-align: center;
+}
+.centrar-listas ul {
+	text-align: left;
+	display: inline-block;
+}
+
+/* Lista rayada */
+ul.lista {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
+}
+ul.lista li {
+    margin: 0;
+    padding: 8px 10px;
+    color: #111;
+}	
+ul.lista li:nth-child(odd){/*filas impares */
+background-color: whitesmoke;
+}
+
+ul.lista li:nth-child(even){ /*filas pares*/
+background-color: #cccccc;
+}
+
+/* Tooltip */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color:var(--primary-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+/* ... */
+
+/* Otras pruebas en los textos */
+p:nth-child(odd){ font-size: 1.5em; color:var(--primary-color) } 
+ p:nth-child(2n+1){ font-size: 1.5em; color:var(--primary-color)}
+
+/* p:nth-child(even){ color:  var(--secondary-color)} */
+/* p:nth-child(2n){ color:  var(--secondary-color)} */
+
+/* p:first-child{ font-size: 1.5em; } 
+p:last-child{ color:  var(--secondary-color) }
+p:nth-child(3){ color:var(--primary-color) } */
+
+p:nth-child(2n)::after {
+    content: " - Continuará";
+    color:  var(--primary-color);
+}  
+
+/* algunos seudo-elementos mas*/
+/* h1::first-letter{
+    color: var(--primary-color);
+} */
+/* p::first-line{
+    color: white;
+} */
+/* h1::selection{
+    background-color: var(--primary-color);
+} */
+
+/* Dialogo-perrito */
+.dialogo {
+	background: var(--secondary-color);
+	padding: 10px;
+	color: #000;
+	margin: 30px auto;
+	border-radius: 15px;
+	font-size: 18px;
+	line-height: 28px;
+    text-align: center;
+    width: 200px;
+
+	position: relative;
+}
+
+.dialogo::before{
+    content: "";
+    border-top: 20px solid var(--secondary-color);
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    bottom: -40px;
+    right: calc(50% - 20px);
+}
+
+.dialogo::after{
+    display: block;
+    content: url("../img/perro.gif");
+    position: absolute;
+
+}
+
+
+/*  Formularios */
+form input {
+    margin: 15px 15px 0 15px;
+    order: 2;
+}
+
+input[type=submit],
+input[type=reset] {
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    width: unset;
+}
+input::placeholder{
+    color: grey;
+}
+input:focus::placeholder{
+    color:transparent; 
+    /* visibility:hidden */
+ }
+ 
+ input[type=text]:invalid,
+ input[type=email]:invalid{
+     border: 2px solid var(--primary-color);
+ }
+
+ input[type=text]:valid,
+ input[type=email]:valid{
+     border: 2px solid green;
+ }
+  .required::before{
+      content: "*";
+      color: var(--primary-color);
+      margin-right: 5px;
+      font-size: 20px;
+  }
+
+  /* opcion automatica */
+  /* fieldset div{
+      display: inline-flex;
+      flex-direction: row-reverse;
+  }
+  input:required + label::before {
+      content: "*";
+      color: var(--primary-color);
+      margin-right: 5px;
+      font-size:20px;
+  } */
