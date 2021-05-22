@@ -128,7 +128,7 @@ form {
     color: #fff;
     display: flex;
     flex-direction: column;
-    background-color: var(--color-principal);
+    background-color: blue;
     padding: 40px 40px 10px;
 }
 

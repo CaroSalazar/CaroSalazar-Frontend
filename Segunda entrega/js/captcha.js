@@ -6,7 +6,7 @@ let captcha = "";
 //defino la funcion generateRandom
 function generateRandom(){
     //genero el numero random y lo asigno a la variable random
-    let random = Math.floor(Math.random()*1000000);
+    let random = Math.round(Math.random()*1000000);
     //referencio el display-captcha
     let displayCaptcha = document.querySelector("#display-captcha")
     //muestro el numero random en el campo display-captcha
